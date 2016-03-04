@@ -27,6 +27,7 @@ import java.io.OutputStream;
 
 /**
  * 登录页面的Activity
+ * 增加密码验证功能
  */
 public class LoginActivity extends BaseActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
