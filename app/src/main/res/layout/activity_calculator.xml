@@ -1,0 +1,246 @@
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+        
+        <TextView 
+            android:id="@+id/content"
+            android:gravity="center_vertical|right"
+            android:textSize="40sp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a9c1d6"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hehe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:layout_weight="1.00"
+            android:text="点我有惊喜"
+            android:onClick="print1" />
+            
+        <Button 
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:background="@drawable/calculator_color_selector3"
+            android:layout_margin="5dp"
+            android:text="删除"
+            android:onClick="print1" />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+            
+        <Button 
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/b8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="8"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/b9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="9"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/chu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector2"
+            android:layout_margin="5dp"
+            android:text="÷"
+            android:onClick="print1" />　
+    </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+            
+        <Button 
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="4"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="5"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="6"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/cheng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector2"
+            android:layout_margin="5dp"
+            android:text="×"
+            android:onClick="print1" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+            
+        <Button 
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="1"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="2"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="3"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/jian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector2"
+            android:layout_margin="5dp"
+            android:text="-"
+            android:onClick="print1" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+            
+        <Button 
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="."
+            android:onClick="print1" />
+        <Button 
+            android:id="@+id/b0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="0"
+            android:onClick="print" />
+        <Button 
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector1"
+            android:layout_margin="5dp"
+            android:text="="
+            android:onClick="print2" />
+        <Button 
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/calculator_color_selector2"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:onClick="print1" />
+    </LinearLayout>
+    
+    
+</LinearLayout>

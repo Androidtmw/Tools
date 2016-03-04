@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_joke_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textColor="#00bfff"
+        android:text="作者"/>
+    <TextView
+        android:id="@+id/tv_joke_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="作者"/>
+    <com.tmw.tools.views.CacheImageView
+        android:id="@+id/iv_joke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultImage="@drawable/news_default_img"/>
+
+</LinearLayout>

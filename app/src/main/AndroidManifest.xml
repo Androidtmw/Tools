@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tmw.tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".util.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".CityActivity"/>
+        <activity android:name=".HomeDetailsActivity"/>
+        <activity android:name=".NewHouseActivity"/>
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CalculatorActivity"/>
+        <activity android:name=".CalendarActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"
+            android:label="注册"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name=".JokeActivity"/>
+        <activity android:name=".WeatherActivity"/>
+        <activity android:name=".MusicActivity"/>
+        <activity android:name=".ChangepwActivity"
+            android:label="修改密码"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <service android:name=".service.MusicPlayService"/>
+    </application>
+
+</manifest>

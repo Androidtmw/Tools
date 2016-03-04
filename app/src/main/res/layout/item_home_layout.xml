@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <com.tmw.tools.views.CacheImageView
+        android:id="@+id/iv_homemsg"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:defaultImage="@drawable/news_default_img"
+        />
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_toRightOf="@id/iv_homemsg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="买房还是炒股"/>
+
+    <TextView
+        android:id="@+id/tv_home_summary"
+        android:layout_below="@id/tv_home_title"
+        android:layout_toRightOf="@id/iv_homemsg"
+        android:layout_width="match_parent"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="呵哈哈和哈呵"/>
+
+</RelativeLayout>

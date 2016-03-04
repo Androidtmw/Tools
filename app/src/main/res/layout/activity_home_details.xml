@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5aedf2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_detail_back"
+            android:src="@drawable/ic_broswer_back_normal"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="房产资讯"/>
+
+        <ImageButton
+            android:id="@+id/button_share"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_broswer_back_normal"
+            android:background="@null"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="房价天差地远"/>
+        <TextView
+            android:id="@+id/tv_detail_source"
+            android:layout_below="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="每日经济新闻"/>
+        <TextView
+            android:id="@+id/tv_detail_time"
+            android:layout_below="@+id/tv_detail_title"
+            android:layout_toRightOf="@+id/tv_detail_source"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="02-17 07:19"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_detail"
+        android:divider="@null"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

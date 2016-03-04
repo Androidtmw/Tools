@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_weather_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#f236d3"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="19日"/>
+        <TextView
+            android:id="@+id/tv_weather_week"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textColor="#f236d3"
+            android:text="星期五"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/weather_sunny"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_weather_weather"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="晴"/>
+        <TextView
+            android:id="@+id/tv_weather_wind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="东北风"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_weather_temperature"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#1825e1"
+        android:text="温度：10.c~12c"
+        android:gravity="center"/>
+
+
+</LinearLayout>

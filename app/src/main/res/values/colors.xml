@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="pressed1">#2fa2da</color>
+    <color name="unpressed1">#79c8ef</color>
+    <color name="pressed2">#ffe312</color>
+    <color name="unpressed2">#f1ea34</color>
+    <color name="pressed3">#ec0fdd</color>
+    <color name="unpressed3">#f14f43</color>
+
+    <color name="pressed4">#fdda4949</color>
+    <color name="unpressed4">#e9bb3f</color>
+
+
+</resources>
