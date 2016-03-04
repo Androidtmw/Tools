@@ -90,6 +90,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         }
     }
 
+    /**
+     * 登录按钮的回调方法，判断后登录
+     * @param v
+     */
     @Override
     public void onClick(View v) {
 
