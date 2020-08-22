@@ -54,7 +54,7 @@ public class JokeActivity extends BaseActivity implements DownUtil.OnDownComplet
     }
 
     @Override
-    protected void loadDatas() {
+    protected void loadData() {
 
         jokeUrl = Constant.Url.JOKE_URL+page;
 
@@ -91,7 +91,7 @@ public class JokeActivity extends BaseActivity implements DownUtil.OnDownComplet
 
         linearLayout.setVisibility(View.GONE);
         page++;
-        loadDatas();//页数变更后重新加载
+        loadData();//页数变更后重新加载
 
     }
 

@@ -65,7 +65,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
 
     @Override
-    protected void loadDatas() {
+    protected void loadData() {
         //初始化时创建或打开一个数据库对象
         database = myDataBase.getReadableDatabase();
 

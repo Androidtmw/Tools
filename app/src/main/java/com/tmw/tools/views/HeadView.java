@@ -1,12 +1,13 @@
 package com.tmw.tools.views;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.widget.FrameLayout;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.tmw.tools.R;
 import com.tmw.tools.bean.Advertisement;
@@ -89,7 +90,7 @@ public class HeadView extends FrameLayout implements DownUtil.OnDownComplete, Vi
     }
 
 
-    class HeadViewPagerAdapter extends FragmentStatePagerAdapter{
+    class HeadViewPagerAdapter extends FragmentStatePagerAdapter {
 
         private List<Advertisement> advertisements;
 

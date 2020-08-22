@@ -2,20 +2,21 @@ package com.tmw.tools.base;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * activity的管理基类，
  * 项目中的所有activity都必须继承于该类
  */
-public abstract class BaseActivity extends AppCompatActivity{
+public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(contentView());
         init();
-        loadDatas();
+        loadData();
     }
 
     /**
@@ -33,7 +34,7 @@ public abstract class BaseActivity extends AppCompatActivity{
     /**
      * 加载数据方法，具体实现交给子类
      */
-    protected void loadDatas() {}
+    protected void loadData() {}
 
     /**
      * 带过场动画的启动Activit的方式

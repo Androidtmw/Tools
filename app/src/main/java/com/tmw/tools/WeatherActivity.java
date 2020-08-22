@@ -60,7 +60,7 @@ public class WeatherActivity extends BaseActivity implements DownUtil.OnDownComp
     }
 
     @Override
-    protected void loadDatas() {
+    protected void loadData() {
         try {
             //将中文转化为utf编码
             String defaultCityCode = URLEncoder.encode(defaultCity, "UTF-8");
@@ -99,7 +99,7 @@ public class WeatherActivity extends BaseActivity implements DownUtil.OnDownComp
         if (requestCode == Constant.KEY.REQUEST_CODE && resultCode == Constant.KEY.RESULT_CODE) {
 
             defaultCity = data.getStringExtra(Constant.KEY.CITY_NAME);
-            loadDatas();
+            loadData();
 
             ShareUtil.putString(defaultCity, "defaultCity");
         }

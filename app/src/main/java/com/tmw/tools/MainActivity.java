@@ -23,49 +23,38 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
     @Override
     protected void init() {
-        radioGroup = (RadioGroup) findViewById(R.id.rg_tab);
-
+        radioGroup = findViewById(R.id.rg_tab);
         radioGroup.setOnCheckedChangeListener(this);
-
     }
 
-
     @Override
-    protected void loadDatas() {
-
+    protected void loadData() {
         Intent intent = getIntent();
-
         username = intent.getStringExtra(Constant.KEY.UN);//接收登录页面传过来的用户名
-
         radioGroup.getChildAt(0).performClick();
-
-
     }
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-        if (checkedId == R.id.rb_function){
-
+        if (checkedId == R.id.rb_function) {
             FunctionFragment functionFragment = new FunctionFragment();
             Bundle bundle = new Bundle();
-            bundle.putString(Constant.KEY.UN,username);
-
+            bundle.putString(Constant.KEY.UN, username);
             functionFragment.setArguments(bundle);
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.frame_layout, functionFragment)
                     .commit();
 
-        }else if (checkedId == R.id.rb_house){
+        } else if (checkedId == R.id.rb_house) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.frame_layout, new HomeFragment())
                     .commit();
 
-        }else if (checkedId == R.id.rb_mine){
+        } else if (checkedId == R.id.rb_mine) {
 
             MineFragment mineFragment = new MineFragment();
             Bundle bundle = new Bundle();
-            bundle.putString(Constant.KEY.UN,username);
+            bundle.putString(Constant.KEY.UN, username);
 
             mineFragment.setArguments(bundle);
 
